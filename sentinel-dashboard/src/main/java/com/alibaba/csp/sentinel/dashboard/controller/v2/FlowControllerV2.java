@@ -65,6 +65,9 @@ public class FlowControllerV2 {
     @Qualifier("flowRuleDefaultPublisher")
     private DynamicRulePublisher<List<FlowRuleEntity>> rulePublisher;
 
+
+
+
     @GetMapping("/rules")
     @AuthAction(PrivilegeType.READ_RULE)
     public Result<List<FlowRuleEntity>> apiQueryMachineRules(@RequestParam String app) {
